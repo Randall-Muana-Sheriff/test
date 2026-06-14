@@ -1,272 +1,154 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>نادي الأهلي العزازي</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Tahoma, Arial, sans-serif;
-}
-
-body{
-    background:
-    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
-    url('https://images.unsplash.com/photo-1517466787929-bc90951d0974');
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-    color:white;
-}
-
-header{
-    text-align:center;
-    padding:40px 20px;
-    background:linear-gradient(135deg,#b30000,#e60000);
-    box-shadow:0 5px 20px rgba(0,0,0,.3);
-}
-
-.logo{
-    width:90px;
-    height:90px;
-    margin:auto;
-    border-radius:50%;
-    background:white;
-    color:#b30000;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:bold;
-    font-size:18px;
-    margin-bottom:15px;
-    border:4px solid gold;
-}
-
-.welcome{
-    max-width:900px;
-    margin:25px auto;
-    text-align:center;
-    padding:25px;
-    background:rgba(255,255,255,.1);
-    border-radius:15px;
-    backdrop-filter:blur(8px);
-}
-
-.welcome h2{
-    color:gold;
-    margin-bottom:15px;
-    font-size:32px;
-}
-
-.container{
-    width:90%;
-    max-width:1300px;
-    margin:auto;
-}
-
-.section{
-    margin:25px 0;
-    padding:25px;
-    background:rgba(255,255,255,.1);
-    border-radius:15px;
-    backdrop-filter:blur(8px);
-}
-
-.section h2{
-    color:gold;
-    margin-bottom:20px;
-}
-
-.info{
-    font-size:24px;
-    font-weight:bold;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:rgba(255,255,255,.12);
-    border-radius:15px;
-    overflow:hidden;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-}
-
-.card-content{
-    padding:15px;
-    text-align:center;
-}
-
-.card-content h3{
-    margin-bottom:8px;
-}
-
-footer{
-    margin-top:40px;
-    text-align:center;
-    background:#111;
-    padding:20px;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نادي الأهلي العزازي</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-
-<header>
-
-    <div class="logo">
-        الأهلي
-    </div>
-
-    <h1>نادي الأهلي العزازي</h1>
-    <p>الموقع الرسمي للنادي</p>
-
-</header>
-
-<div class="welcome">
-    <h2>"أهلي يا مدرسة كورة وفن وهندسة"</h2>
-    <p>
-        مرحباً بكم في الموقع الرسمي لنادي الأهلي العزازي،
-        نادي العراقة والطموح وصناعة النجوم، حيث يجتمع الإبداع
-        الرياضي والروح الجماعية لتحقيق الإنجازات.
-    </p>
-</div>
-
-<div class="container">
-
-    <div class="section">
-        <h2>رئيس النادي</h2>
-        <div class="info">الطيب الطريفي</div>
-    </div>
-
-    <div class="section">
-        <h2>المدرب</h2>
-        <div class="info">وهبة</div>
-    </div>
-
-    <div class="section">
-        <h2>الميزانية الشهرية</h2>
-        <div class="info">1,000,000,000 جنيه سوداني</div>
-    </div>
-
-    <div class="section">
-        <h2>لاعبو الفريق</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <img src="images/mujahid.jpg">
-                <div class="card-content">
-                    <h3>مجاهد أحمد</h3>
-                    <p>لاعب الفريق</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/sasa.jpg">
-                <div class="card-content">
-                    <h3>أحمد دفع الله (ساسا)</h3>
-                    <p>لاعب الفريق</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="wab.jpeg">
-                <div class="card-content">
-                    <h3>أواب جمال</h3>
-                    <p>لاعب الفريق</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/awab-sheikh.jpg">
-                <div class="card-content">
-                    <h3>أواب الشيخ</h3>
-                    <p>لاعب الفريق</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/badri.jpg">
-                <div class="card-content">
-                    <h3>بدري شمس المعارف</h3>
-                    <p>لاعب الفريق</p>
-                </div>
-            </div>
-
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo">الأهلي</div>
+        <div>
+          <h1>نادي الأهلي العزازي</h1>
+          <p>الموقع الرسمي للنادي</p>
         </div>
+      </div>
+      <div class="badge">⚽ موسم 2026 • فريق مميز • روح واحدة</div>
     </div>
 
-    <div class="section">
-        <h2>أعضاء النادي</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <img src="images/ahmed-hazina.jpg">
-                <div class="card-content">
-                    <h3>أحمد محمد حزينة</h3>
-                    <p>عضو النادي</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/yousif.jpg">
-                <div class="card-content">
-                    <h3>يوسف سلامة</h3>
-                    <p>عضو النادي</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/osama.jpg">
-                <div class="card-content">
-                    <h3>أسامة دقاش</h3>
-                    <p>عضو النادي</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/hossam.jpg">
-                <div class="card-content">
-                    <h3>حسام البلولة</h3>
-                    <p>عضو النادي</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/abdelrahim.jpg">
-                <div class="card-content">
-                    <h3>عبد الرحيم عطا المولى</h3>
-                    <p>عضو النادي</p>
-                </div>
-            </div>
-
+    <div class="hero">
+      <section class="hero-card hero-copy">
+        <p class="eyebrow">مرحبا بكم في قلب النادي</p>
+        <h2>أهلي يا مدرسة الكورة… والطموح يعلو كل يوم.</h2>
+        <p>
+          هذا الموقع يعكس هوية النادي: إنجاز، تنسيق، وعزيمة. نعرض هنا رئيس النادي، المدرب، الميزانية، وأبرز اللاعبين والأعضاء.
+        </p>
+        <div class="chip-row">
+          <span class="chip">طموح</span>
+          <span class="chip">تشكيلة قوية</span>
+          <span class="chip">مجتمع رياضي</span>
+          <span class="chip">أهداف واضحة</span>
         </div>
+        <div class="cta-row">
+          <div class="dropdown">
+            <button id="discoverBtn" class="primary-btn" type="button" aria-expanded="false" aria-controls="discoverMenu">اكتشف الفريق</button>
+            <div id="discoverMenu" class="dropdown-menu">
+              <a href="about-team.html">About the team</a>
+              <a href="about-therapy.html">About the therapy</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <button class="ghost-btn" type="button" onclick="document.getElementById('president').scrollIntoView({behavior:'smooth'});">رئيس النادي</button>
+        </div>
+      </section>
+
+      <aside class="hero-card highlight-panel">
+        <article class="mini-card">
+          <h3>الرسالة</h3>
+          <p>نحلم، نخطط، ونحقق معًا. هدفنا بناء فريق يرفع اسم النادي في كل المنافسات.</p>
+        </article>
+        <article class="mini-card">
+          <h3>التركيز هذا الموسم</h3>
+          <p>الانضباط، التدريب المستمر، وأداء ثابت في كل مباراة.</p>
+        </article>
+        <article class="mini-card">
+          <h3>ملاحظة</h3>
+          <p>تم إضافة صور حديثة وتصميم عصري مع عناصر تفاعلية بسيطة لتجربة أفضل.</p>
+        </article>
+      </aside>
     </div>
+  </header>
 
-</div>
+  <main class="container">
+    <section class="section" id="president">
+      <h2>رئيس النادي</h2>
+      <div class="president-grid">
+        <article class="president-card">
+          <img src="altiyb altrifi.jpeg" alt="صورة رئيس النادي" />
+          <div class="president-caption">
+            <h3>الطيب الطريفي</h3>
+            <small>رئيس النادي</small>
+            <p>يركز على تطوير النادي، دعم اللاعبين، وتعزيز روح الانتماء والإنجاز.</p>
+          </div>
+        </article>
+        <article class="quote-box">
+          <p class="muted">"النجاح لا يأتي صدفة، بل يأتي من نظام، انضباط، والعمل الجماعي."</p>
+          <p id="quote-text" class="muted">الروح الجماعية هي أسرع طريق للفوز.</p>
+        </article>
+      </div>
+    </section>
 
-<footer>
-    © 2026 نادي الأهلي العزازي - جميع الحقوق محفوظة
-</footer>
+    <section class="section">
+      <h2>أرقام النادي</h2>
+      <div class="stats-grid">
+        <article class="stat-card">
+          <span class="value" data-target="12" data-suffix=" لاعب">0 لاعب</span>
+          <span>لاعبين في التشكيلة الأساسية</span>
+        </article>
+        <article class="stat-card">
+          <span class="value" data-target="8" data-suffix=" شهور">0 شهور</span>
+          <span>من خطة بناء وتطوير الفريق</span>
+        </article>
+        <article class="stat-card">
+          <span class="value" data-target="100" data-suffix="%">0%</span>
+          <span>التزام ومثابرة في التدريب</span>
+        </article>
+      </div>
+    </section>
 
+    <section class="section">
+      <h2>المدرب</h2>
+      <p>المدرب وهبة يركز على الانضباط táctكي، سرعة التفاعل، وتحفيز اللاعبين للوصول إلى الأفضل.</p>
+    </section>
+
+    <section class="section">
+      <h2>الميزانية الشهرية</h2>
+      <p>ميزانية النادي الشهرية تصل إلى <strong>1,000,000,000 جنيه سوداني</strong> لدعم التدريب، الاحترافية، والإعداد للمباريات.</p>
+    </section>
+
+    <section class="section">
+      <h2>لاعبو الفريق</h2>
+      <div class="cards">
+        <article class="card"><img src="mogahid.jpeg" alt="مجاهد أحمد" /><div class="card-content"><h3>مجاهد أحمد</h3><p>لاعب الفريق</p></div></article>
+        <article class="card"><img src="ahmed dafala.jpeg" alt="أحمد دفع الله" /><div class="card-content"><h3>أحمد دفع الله (ساسا)</h3><p>لاعب الفريق</p></div></article>
+        <article class="card"><img src="wab.jpeg" alt="أواب جمال" /><div class="card-content"><h3>أواب جمال</h3><p>لاعب الفريق</p></div></article>
+        <article class="card"><img src="awab alshik.jpeg" alt="أواب الشيخ" /><div class="card-content"><h3>أواب الشيخ</h3><p>لاعب الفريق</p></div></article>
+        <article class="card"><img src="badri.jpeg" alt="بدري شمس المعارف" /><div class="card-content"><h3>بدري شمس المعارف</h3><p>لاعب الفريق</p></div></article>
+        <article class="card"><img src="wargo.jpeg" alt="وارغو" /><div class="card-content"><h3>وارغو</h3><p>لاعب الفريق</p></div></article>
+        <article class="card"><img src="zuhir zahir .jpeg" alt="زهير زاهر الحلو" /><div class="card-content"><h3>زهير زاهر الحلو</h3><p>لاعب الفريق</p></div></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>أعضاء النادي</h2>
+      <div class="cards">
+        <article class="card"><img src="ahmed mohammed.jpeg" alt="أحمد محمد حزينة" /><div class="card-content"><h3>أحمد محمد حزينة</h3><p>عضو النادي</p></div></article>
+        <article class="card"><img src="yousif salama.jpeg" alt="يوسف سلامة" /><div class="card-content"><h3>يوسف سلامة</h3><p>عضو النادي</p></div></article>
+        <article class="card"><img src="sideg.jpeg" alt="صديق النزيهابي" /><div class="card-content"><h3>صديق النزيهابي</h3><p>عضو النادي</p></div></article> 
+        <article class="card"><img src="husam alblola.jpeg" alt="حسام البلولة" /><div class="card-content"><h3>حسام البلولة</h3><p>عضو النادي</p></div></article>
+        <article class="card"><img src="osama dagash.jpeg" alt="أسامة دقاش" /><div class="card-content"><h3>أسامة دقاش</h3><p>عضو النادي</p></div></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>أساطير النادي</h2>
+      <div class="cards">
+        <article class="card"><img src="amarr dafala.jpeg" alt="عمار دفع الله" /><div class="card-content"><h3>عمار دفع الله</h3><p>أسطورة النادي</p></div></article>
+        <article class="card"><img src="samiiii gorshi.jpeg" alt="سامي قرشي" /><div class="card-content"><h3>سامي قرشي</h3><p>أسطورة النادي</p></div></article>
+        <article class="card"><img src="mohammed almuzail.jpeg" alt="محمد المزمل" /><div class="card-content"><h3>محمد المزمل</h3><p>أسطورة النادي</p></div></article>
+        <article class="card"><img src="yousif ali.jpeg" alt="يوسف علي" /><div class="card-content"><h3>يوسف علي</h3><p>أسطورة النادي</p></div></article>
+        <article class="card"><img src="ahmed amar.jpeg" alt="احمد عمار" /><div class="card-content"><h3>احمد عمار</h3><p>أسطورة النادي</p></div></article>
+        <article class="card"><img src="albra musa.jpeg" alt="البراء موسي" /><div class="card-content"><h3>البراء موسي</h3><p>أسطورة النادي</p></div></article>
+        <article class="card"><img src="mohammed mahmoud.jpeg" alt="محمد محمود دريسة" /><div class="card-content"><h3>محمد محمود دريسة</h3><p>أسطورة النادي</p></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> نادي الأهلي العزازي - جميع الحقوق محفوظة</footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
